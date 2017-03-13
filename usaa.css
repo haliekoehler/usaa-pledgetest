@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Oleo+Script+Swash+Caps');
 
 
-body {
+html, body {
     background-color: #115eaa;
     font-family: 'Lato', sans-serif;
     height: 100%;
@@ -38,6 +38,7 @@ input {
     border: none;
     padding: 10px;
     margin: 3px;
+    width: 150px;
 }
 
 input::-webkit-input-placeholder {
@@ -58,6 +59,22 @@ input:-ms-input-placeholder{
 label {
     color: white;
 }
+select {
+    background-color: #004b8e;
+    color: #4d7abc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    padding: 10px;
+    margin: 3px;
+    width: 150px;
+    /*background: #004b8e url("img/drop-down-arrow.png") no-repeat right center;*/
+}
+
+select > option {
+    width: 150px;
+}
+
 
 button {
     font-family: 'Lato', sans-serif;
@@ -92,7 +109,7 @@ footer {
 }
 
 .light-text {
-    font-weight: 300;
+    font-weight: 100;
 }
 
 .bold-text {
@@ -159,7 +176,7 @@ footer {
 }
 
 #top-block-content {
-    background: transparent url('img/large-recycle.png') no-repeat local left;
+    background: transparent url('img/large-recycle.png') no-repeat left;
     background-size: contain;
     margin: 0 auto;
     width: 60%;
@@ -199,8 +216,12 @@ footer {
     padding: 10px;
 }
 
+#top-block-checkbox > label > input, p {
+    display: inline;
+    width: 20px;
+}
+
 #bottom-block {
-    position: relative;
     background-color: #4d7abc;
     overflow: hidden;
 }
@@ -234,26 +255,25 @@ footer {
     display: inline-block;
     height: 500px;
     width: 10%;
-}
-#recycle-break-div > #img-div {
-    background-color: #4d7abc;
-    overflow: hidden;
+    text-align: center;
 }
 
-#recycle-break-div > #img-div > img {
+#recycle-break-div > img {
     position: absolute;
     border: 1px solid white;
     max-width: 50px;
     border-radius: 100%;
     padding: 12px;
-    top: 35%;
-    right: 15%;
+    transform: translate(-50%, 200px);
+    background-color: #4d7abc;
 }
 
 #vertical-line {
     position : absolute;
     height: 100%;
     border-left: 1px solid white;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 #horizontal-break {
@@ -267,6 +287,7 @@ footer {
     float: right;
     height: 500px;
     padding-top: 50px;
+    padding-left: 40px;
     box-sizing: border-box;
 }
 
@@ -295,7 +316,13 @@ footer {
     #top-block-inputs > input {
         display: block;
         margin: 10px auto;
-        width: 50%;
+        width: 150px;
+    }
+
+    select {
+        display: block;
+        margin: 10px auto;
+        width: 170px;
     }
 
     #i-div {
@@ -341,5 +368,7 @@ footer {
     #horizontal-break {
         display: block;
         padding: 5px;
+        width: 80%;
+        margin: 0 auto;
     }
 }

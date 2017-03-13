@@ -35,13 +35,18 @@
                     <form>
                         <div id="top-block-inputs">
                             <input id="email-input" name="email" type="text" placeholder="Email address">
-                            <input id="district-input" name="district" type="text" placeholder="Select your District">
+                            <label>
+                                <select>
+                                    <option>Select your District</option>
+                                </select>
+                            </label>
+                            <!--<input id="district-input" name="district" type="text" placeholder="Select your District">-->
                             <button type="submit">GO</button>
                         </div><!-- end of top block inputs -->
                         <div id="top-block-checkbox">
-                            <label class="light-text">
+                            <label>
                                 <input id="checkbox" name="updates" type="checkbox">
-                                I'd like to receive updates from Generic Text about this program
+                                <p class="light-text">I'd like to receive updates from Generic Text about this program</p>
                             </label>
                         </div><!-- end of top block checkbox -->
                     </form>
@@ -62,9 +67,7 @@
                 </div><!-- end of current pledges div -->
 
                 <div id="recycle-break-div">
-                    <div id="img-div">
-                        <img src="img/small-recycle.png">
-                    </div>
+                    <img src="img/small-recycle.png">
                     <div id="vertical-line"></div>
                 </div><!-- end of recycle break div -->
 
